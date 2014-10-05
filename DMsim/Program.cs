@@ -12,7 +12,7 @@ namespace DMsim
         /// The main entry point for the application.
         /// </summary>
         /// 
-        // Poepje
+        // HEYO
         [STAThread]
         static void Main()
         {
