@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DMsim.Entities
+namespace Entities
 {
     class Conditions
     {
@@ -40,9 +40,11 @@ namespace DMsim.Entities
             Target.conditions.Add(this);
         }
 
-        // Call these every turn in a foreach loop for the statuseffects dictionary. 
-        // The entity class has a dictionary which holds a statuseffect and the turns remaining.
-        // This method handles the rolls, applies damage, slows speed and so on, it returns the turns remaining.
+        ///<summary>
+        /// Call these every turn in a foreach loop for the statuseffects dictionary. 
+        /// The entity class has a dictionary which holds a statuseffect and the turns remaining.
+        /// This method handles the rolls, applies damage, slows speed and so on, it returns the turns remaining.
+        ///</summary>
         public int Update()
         {
             switch(Type)
