@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Grid.HexGrid
+namespace Grid
 {
     class GridObject
     {
