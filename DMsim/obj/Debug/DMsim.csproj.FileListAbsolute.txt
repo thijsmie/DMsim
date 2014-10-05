@@ -1,3 +1,11 @@
 C:\Users\Ender\Dropbox\C#\DMsim\DMsim\bin\Debug\DMsim.exe.config
 C:\Users\Thijs\Dropbox\C#\DMsim\DMsim\bin\Debug\DMsim.exe.config
 C:\Users\Thijs\Source\Repos\DMsimGit\DMsim\bin\Debug\DMsim.exe.config
+C:\Users\Thijs\Source\Repos\DMsimGit\DMsim\obj\Debug\DMsim.csprojResolveAssemblyReference.cache
+C:\Users\Thijs\Source\Repos\DMsimGit\DMsim\obj\Debug\DMsim.Form1.resources
+C:\Users\Thijs\Source\Repos\DMsimGit\DMsim\obj\Debug\DMsim.Properties.Resources.resources
+C:\Users\Thijs\Source\Repos\DMsimGit\DMsim\obj\Debug\DMsim.csproj.GenerateResource.Cache
+C:\Users\Thijs\Source\Repos\DMsimGit\DMsim\bin\Debug\DMsim.exe
+C:\Users\Thijs\Source\Repos\DMsimGit\DMsim\bin\Debug\DMsim.pdb
+C:\Users\Thijs\Source\Repos\DMsimGit\DMsim\obj\Debug\DMsim.exe
+C:\Users\Thijs\Source\Repos\DMsimGit\DMsim\obj\Debug\DMsim.pdb

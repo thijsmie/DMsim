@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Grid.HexGrid
+namespace Grid
 {
     struct HexVector
     {
@@ -269,12 +269,28 @@ namespace Grid.HexGrid
             return hexes;
         }
 
+        public HexVector[] Line(HexVector v1, double q,double r)
+        {
+            int N = (v1 - new HexVector(q,r)).Length;
+            HexVector[] hexes = new HexVector[N + 1];
+            for (int i = 0; i <= N; i++)
+            {
+                hexes[i] = new HexVector((double)v1.I * (1.0 - i / (double)N) + (double)q * (i / (double)N), (double)v1.J * (1.0 - i / (double)N) + (double)r * (i / (double)N));
+            }
+            return hexes;
+        }
+
         ///<summary>
         /// Produce an array with HexVectors that forms the line to the other HexVector
         ///</summary>
         public HexVector[] Line(HexVector v1)
         {
             return Line(this, v1);
+        }
+
+        public HexVector[] Line(double q, double r)
+        {
+            return Line(this, q, r);
         }
 
         ///<summary>
@@ -294,12 +310,43 @@ namespace Grid.HexGrid
             return hexes;
         }
 
+        public double[,] RingD(HexVector v1, int R)
+        {
+            HexVector H = this.Neighbor(4, R);
+            HexVector K = new HexVector(H);
+            double[,] hexes = new double[12 * R+1,2];
+            int k = 0;
+            for (int i = 0; i < 6; i++)
+                for (int j = 0; j < R; j++)
+                {
+                    k++;
+                    K = H.Neighbor(i);
+                    hexes[k,0] = (double)H.I;
+                    hexes[k,1] = (double)H.J;
+                    k++;
+                    hexes[k, 0] = ((double)H.I+(double)K.I)/2f;
+                    hexes[k, 1] = ((double)H.J+(double)K.J)/2f;
+                    H = K;
+                }
+            return hexes;
+        }
+
         ///<summary>
         /// Produce an array with HexVectors that form the ring on distance R around this Hex
         ///</summary>
         public HexVector[] Ring(int R)
         {
             return Ring(this, R);
+        }
+
+        public override string ToString() 
+        {
+            return I.ToString() + ":" + J.ToString();
+        }
+
+        public double[,] RingD(int R)
+        {
+            return RingD(this, R);
         }
 
         public HexVector Neighbor(int direction,int distance = 1)
