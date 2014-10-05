@@ -97,7 +97,7 @@ namespace Entities
 
         private void addDying()
         {
-            addUnconscious();
+            // addUnconscious();
         }
 
         private void addHelpless()
@@ -162,7 +162,7 @@ namespace Entities
 
         private void removeImmobilized()
         {
-
+            Target.Speed = Target.UsualSpeed;
         }
         #endregion
 
@@ -208,6 +208,11 @@ namespace Entities
                 Target.Dead = true;
                 removeAll();
             }
+        }
+
+        private void updateImmobilized()
+        {
+
         }
         #endregion
     }

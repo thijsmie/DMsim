@@ -110,7 +110,7 @@ namespace Entities
                         result += 8;
                         break;
                     case Dices.d10:
-                        result += 10);
+                        result += 10;
                         break;
                     case Dices.d12:
                         result += 12;
