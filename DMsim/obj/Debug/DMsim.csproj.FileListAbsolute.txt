@@ -1,2 +1,3 @@
 C:\Users\Ender\Dropbox\C#\DMsim\DMsim\bin\Debug\DMsim.exe.config
 C:\Users\Thijs\Dropbox\C#\DMsim\DMsim\bin\Debug\DMsim.exe.config
+C:\Users\Thijs\Source\Repos\DMsimGit\DMsim\bin\Debug\DMsim.exe.config
